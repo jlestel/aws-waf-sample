@@ -22,7 +22,7 @@ aws.config.update({
         base: 1000
     }
 });
-var waf = new aws.WAF();
+var waf = new aws.WAFRegional({'region':'eu-west-1'});
 
 /**
  * Maximum number of IP descriptors per IP Set
